@@ -1,0 +1,9 @@
+load(":foo_binary.bzl", "foo_binary")
+package(default_visibility = ["//visibility:public"])
+
+exports_files(["A.cc"])
+
+foo_binary(
+    name = "A",
+    srcs = ["A.cc"],
+)

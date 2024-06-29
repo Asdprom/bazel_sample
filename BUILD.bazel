@@ -1,0 +1,6 @@
+load(":foo_package.bzl", "foo_package")
+
+foo_package(
+    name = "B",
+    srcs = ["@sample_repo//:A"],
+)

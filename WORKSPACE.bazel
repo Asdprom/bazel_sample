@@ -1,0 +1,5 @@
+workspace(name = "base")
+
+load("//sample_repo:workspace.bzl", "init_sample_workspace")
+init_sample_workspace()
+
